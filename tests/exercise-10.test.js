@@ -46,8 +46,8 @@ const data = [
 ];
 
 describe("Exercise 10", () => {
-  it("should use filter() method", () => {
-    expect(fn.toString()).toMatch(/\bfilter\(/);
+  it("should use flat() method", () => {
+    expect(fn.toString()).toMatch(/\bflat\(/);
   });
   it("should use map() method", () => {
     expect(fn.toString()).toMatch(/\bmap\(/);
