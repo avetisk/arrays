@@ -1,0 +1,19 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx eslint src tests && npx jest",
+    "lint": "npx eslint src tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1"
+  }
+}
