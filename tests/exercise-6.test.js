@@ -39,8 +39,8 @@ describe("Exercise 6", () => {
   it("should use filter() method", () => {
     expect(fn.toString()).toMatch(/\bfilter\(/);
   });
-  it("should return an array with only the id and title props", () => {
-    expect(fn(data)).toEqual([
+  it("should return an array with only movies with a rating > 4", () => {
+    expect(fn(data, ({ rating }) => rating > 4)).toEqual([
       {
         id: 654356453,
         title: "Bad Boys",
