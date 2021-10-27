@@ -27,4 +27,15 @@
 
 // You must throw if no argument is given.
 
-module.exports = () => {};
+module.exports = (array) => {
+  let wantedArray = [];
+
+  if (!array) {
+    throw new Error("Invalid argument");
+  }
+
+  array.forEach((element) => {
+    wantedArray.push({ id: element.id, title: element.title });
+  });
+  return wantedArray;
+};
