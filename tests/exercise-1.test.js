@@ -2,7 +2,7 @@ const fn = require("../src/exercise-1");
 
 describe("Exercise 1", () => {
   it("should use for() loop", () => {
-    expect(fn.toString()).toMatch(/\bfor\(/);
+    expect(fn.toString()).toMatch(/\bfor \(/);
   });
   it("should return the total length of strings in the given array", () => {
     expect(fn(["yolo", "pasta", "bolos", "pouet"])).toBe(19);
