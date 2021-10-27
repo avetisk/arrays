@@ -40,7 +40,7 @@ describe("Exercise 6", () => {
     expect(fn.toString()).toMatch(/\bfilter\(/);
   });
   it("should return an array with only movies with a rating > 4", () => {
-    expect(fn(data, ({ rating }) => rating > 4)).toEqual([
+    expect(fn(data)).toEqual([
       {
         id: 654356453,
         title: "Bad Boys",
