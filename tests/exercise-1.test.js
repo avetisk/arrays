@@ -11,7 +11,7 @@ describe("Exercise 1", () => {
     expect(fn(["", "", "", ""])).toBe(0);
   });
   it("should return 0 when array is empty", () => {
-    expect(fn([])).toEqual([]);
+    expect(fn([])).toBe(0);
   });
   it("should throw if no argument is given", () => {
     expect(() => fn()).toThrow();
