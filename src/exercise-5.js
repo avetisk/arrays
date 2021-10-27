@@ -3,4 +3,18 @@
 
 // If no argument given, throw.
 
-module.exports = () => {};
+module.exports = (array, functionToApply) => {
+  let expectedArray = [];
+
+  if (!array) {
+    throw new Error("Invalid argument");
+  }
+
+  array.forEach((element) => {
+    if (functionToApply(element)) {
+      expectedArray.push(element);
+    }
+  });
+
+  return expectedArray;
+};
