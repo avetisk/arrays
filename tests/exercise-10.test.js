@@ -52,7 +52,7 @@ describe("Exercise 10", () => {
   it("should use map() method", () => {
     expect(fn.toString()).toMatch(/\bmap\(/);
   });
-  it("should return an array with only the id and title props", () => {
+  it("should return an array with only the id prop", () => {
     expect(fn(data)).toEqual([32, 549, 4311, 990]);
   });
   it("should return an empty array when array is empty", () => {
