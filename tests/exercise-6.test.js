@@ -68,7 +68,7 @@ describe("Exercise 6", () => {
     ]);
   });
   it("should return an empty array when array is empty", () => {
-    expect(fn([])).toEqual([]);
+    expect(fn([], ({ rating }) => rating > 4))).toEqual([]);
   });
   it("should throw if no argument is given", () => {
     expect(() => fn()).toThrow();
